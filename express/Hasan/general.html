@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>General</title>
+   
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          <!--  <li><a href="#">Overview</a></li>-->
+            <li><a href="general2.html">Learning Methods</a></li>
+          <!--  <li><a href="seeking.html">Seeking Help</a></li> -->
+            <li><a href="compare.html">Compare Courses</a></li>
+            <li><a href="review.html">Program Overview</a></li>
+            <li><a href="survey.html">Make Us Better</a></li>
+        </ul>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Logo.png" alt="" width="100px" height="70px">
+            </a>
+        </div>
+        <section class="project">
+            <h3>GENERAL VISULATION</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad.</p>
+            
+            <p class="heading">Lorem ipsum dolor</p>
+            <div class="graph"></div>
+
+        </section>
+
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="d3.v3.min.js" charset="utf-8"></script>
+    <script src="topojson.v1.min.js"></script>
+
+ 
+
+    <script src="mainGeneral.js"></script>
+ 
+    <script>
+        // to make menu item background gray
+        var activeurl = window.location.pathname.slice(1);
+        
+        var c = document.querySelectorAll('.sidebar ul li a');
+       
+        for (var i = 0; i < c.length; i++) {
+            if (c[i].pathname.slice(1) === activeurl) {
+                var x = document.querySelectorAll('.sidebar ul li');
+                x[i].style.background = '#d3d3d3';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li class="activeItem"><a href="index.html">Home</a></li>
+          <!-- <li class=""><a href="general.html">Overview</a></li> --> 
+            <li class=""><a href="general2.html">Learning Methods</a></li>
+          <!--  <li class=""><a href="seeking.html">Seeking Help</a></li>-->
+            <li class=""><a href="compare.html">Compare Courses</a></li>
+            <li class=""><a href="review.html">Program Overview</a></li>
+            <li class=""><a href="survey.html">Make Us Better</a></li>
+        </ul>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="content">
+        <div class="logo">
+            <a href="index.html">
+            <img src="Logo.png" alt="" width="100px" height="70px">
+        </a>
+        </div>
+        <section class="project">
+            <h3>ABOUT PROJECT</h3>
+            <p>ISE Assistant is a Web Application,designed to help students having a prior knowledge of ISE Programs
+                and courses so that they can have a prior knowledge before taking the course and avoiding any surprising
+                 experience during the course,if they take. It also provides summary of results, activities and whether they
+                 were being helpful to learn in an effective way. <br>Moreover, the project also highlights the potential reasons
+                 which lead students to fail the courses, so that the new students can take advantage and they avoid repeating the 
+                 same behaviour.<br>
+                 Last but not the least, this project also reflects the Learning Methodologies adopted and suggested by the students.<br>
+                 We catered four learning methodolodies for students to suggest, and two learning methodolodies which they them selves adopted.<br>
+                 This is wholly a visualization project and each of mentioned scenarios are presented using a suitable visualization. We used HighCharts
+                 to create the visualizations.<br>
+                 I hope you enjoy the project.
+    
+            </p>
+
+            <img src="Logo.png" alt="" width="200px" height="200px">
+           
+        </section>
+
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // to make menu item background gray
+        var activeurl = window.location.pathname.slice(1);
+        
+        var c = document.querySelectorAll('.sidebar ul li a');
+       
+        for (var i = 0; i < c.length; i++) {
+            if (c[i].pathname.slice(1) === activeurl) {
+                var x = document.querySelectorAll('.sidebar ul li');
+                x[i].style.background = '#d3d3d3';
+            }
+        }
+    </script>
+</body>
+</html>

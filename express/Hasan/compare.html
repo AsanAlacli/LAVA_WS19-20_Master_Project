@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compare Courses</title>
+    <!-- Load c3.css -->
+    <link href="c3.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="onLoad()">
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+         <!--   <li><a href="general.html">Overview</a></li>-->
+            <li><a href="general2.html">Learning Methods</a></li>
+           <!-- <li><a href="seeking.html">Seeking Help</a></li>-->
+            <li><a href="#">Compare Courses</a></li>
+            <li><a href="review.html">Course Overview</a></li>
+            <li><a href="survey.html">Make Us Better</a></li>
+        </ul>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Logo.png" alt="" width="100px" height="70px">
+            </a>
+        </div>
+        <section class="project">
+            <h3>COMPARE COURSES</h3>
+            
+            <div class="graph">
+                <div>
+                    <p>If you are stuck between choosing two courses, you are on the right page.<br>
+                    Just select both courses and have a look at the visual summaries which can help you make the decision.</p>
+                </div>
+                
+                <form>
+                    <select name="masbach" id="program" onchange="degreeUpdate()">
+                        <option>Bachelors</option>
+                        <option>Masters</option>
+                    </select>
+                    <select name="degree" id="programName" onclick="courseUpdate()">
+                        
+                    </select>
+                    
+                    <select name="course1" id="courseName1">
+                        
+                    </select>
+                    
+                    <select name="course2" id="courseName2">
+                        
+                    </select>
+
+                    <input type="button" onclick="compareBtnClicked()" value="Compare"></input>
+                        
+                </form>
+
+                <div class="coursesForm">
+                    <div class="left">
+
+                        <!-- grafik - Left - Bar - 1 -->
+                        <p id="sugLMCourse1"class="heading"></p>
+                        <div id="barLeft1"></div>
+
+                       <!-- grafik - Left - Bar - 2 -->
+                        <p class="heading"></p>
+                        <div id="barLeft2"></div>
+
+                        <!-- grafik - Left - Pie - 1 -->
+                        <p class="heading"></p>
+                        <div id="pieLeft1"></div>
+
+                        <!-- grafik - Left - Pie - 2 -->
+                        <p class="heading"></p>
+                        <div id="pieLeft2"></div>
+                    </div>
+
+
+                    <div class="right">
+                        <!-- grafik - Right - Bar - 1 -->
+                        <p id="sugLMCourse2" class="heading"></p>
+                        <div id="barRight1"></div>
+
+                       <!-- grafik - Right - Bar - 2 -->
+                        <p class="heading"></p>
+                        <div id="barRight2"></div>
+
+                        <!-- grafik - Right - Pie - 1 -->
+                        <p class="heading"></p>
+                        <div id="pieRight1"></div>
+
+                        <!-- grafik - Right - Pie - 2 -->
+                        <p class="heading"></p>
+                        <div id="pieRight2"></div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <!-- grafik - Bar - course difficulty -->
+                    <p class="heading"></p>
+                    <div id="barDifficulty"></div>
+                </div>
+
+
+                <div>
+                    <!-- grafik - Bar - TCPA -->
+                    <p class="heading"></p>
+                    <div id="barTcpa"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <!-- Load d3.js and c3.js  and highcharts-->
+    <script src="d3.v5.min.js" charset="utf-8"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="c3.min.js"></script>
+  <script src="/events/compare.js"></script> 
+     <script src="mainCompare.js"></script> 
+   <script>
+        // to make menu item background gray
+        var activeurl = window.location.pathname.slice(1);
+        
+        var c = document.querySelectorAll('.sidebar ul li a');
+       
+        for (var i = 0; i < c.length; i++) {
+            if (c[i].pathname.slice(1) === activeurl) {
+                var x = document.querySelectorAll('.sidebar ul li');
+                x[i].style.background = '#d3d3d3';
+            }
+        }
+    </script> 
+    
+</body>
+</html>

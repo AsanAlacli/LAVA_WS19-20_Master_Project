@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Load c3.css -->
+    <link href="c3.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="general.html">Overview</a></li>  -->
+            <li><a href="general2.html">Learning Methods</a></li>
+           <!-- <li><a href="#">Seeking Help</a></li>-->
+            <li><a href="compare.html">Compare Courses</a></li>
+            <li><a href="review.html">Program Overview</a></li>
+            <li><a href="survey.html">Make Us Better</a></li>
+        </ul>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="content">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Logo.png" alt="" width="100px" height="70px">
+            </a>
+        </div>
+        <section class="project">
+            <h3>SEEKING HELP</h3>
+            
+            <div class="graph">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, animi?</p>
+                </div>
+                
+                <form>
+                    <select name="degree">
+                        <option>B.Sc. Computer Engineering (Software Engineering)</option>
+                        <option>B.Sc. Computer Engineering (Communications)</option>
+                        <option>B.Sc. Electrical and Electronic Engineering</option>
+                        <option>B.Sc. Mechanical Engineering</option>
+                        <option>B.Sc. Metallurgy and Metal Forming</option>
+                        <option>B.Sc. Steel Technology and Metal Forming</option>
+                        <option>B.Sc. Structural Engineering</option>
+                        <option>M.Sc. Automation and Control Engineering</option>
+                        <option>M.Sc. Computer Engineering (Intelligent Networked Systems)</option>
+                        <option>M.Sc. Computer Engineering (Interactive Systems and Visualization)</option>
+                        <option>M.Sc. Computational Mechanics</option>
+                        <option>M.Sc. Communications Engineering</option>
+                        <option>M.Sc. Embedded Systems Engineering</option>
+                        <option>M.Sc. Mechanical Engineering (General Mechanical Engineering)</option>
+                        <option>M.Sc. Mechanical Engineering (Energy and Environmental Engineering)</option>
+                        <option>M.Sc. Mechanical Engineering (Mechatronics)</option>
+                        <option>M.Sc. Mechanical Engineering (Production and Logistics)</option>
+                        <option>M.Sc. Mechanical Engineering (Ship and Offshore Technology)</option>
+                        <option>M.Sc. Metallurgy and Metal Forming</option>
+                        <option>M.Sc. Management and Technology of Water and Waste Water</option>
+                        <option>M.Sc. Power Engineering</option>
+                      </select>
+                </form>
+
+                
+                <!--grafik - 1-->
+                <p class="heading">Lorem ipsum dolor sit amet</p>
+                <div id="chart_div"></div>
+
+                <hr>
+                
+                 <!--grafik - 2-->
+                 <p class="heading">Lorem ipsum dolor sit amet</p>
+                <div id="regions_div" style="width: 900px; height: 500px;"></div>
+                
+            </div>
+
+
+           
+        </section>
+
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <script src="mainSeeking.js"></script>
+    <script>
+        // to make menu item background gray
+        var activeurl = window.location.pathname.slice(1);
+        
+        var c = document.querySelectorAll('.sidebar ul li a');
+       
+        for (var i = 0; i < c.length; i++) {
+            if (c[i].pathname.slice(1) === activeurl) {
+                var x = document.querySelectorAll('.sidebar ul li');
+                x[i].style.background = '#d3d3d3';
+            }
+        }
+    </script>
+</body>
+</html>

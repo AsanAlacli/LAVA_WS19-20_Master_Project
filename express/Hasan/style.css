@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    background: #fff;
+    overflow: scroll;
+}
+
+/* sidebar menu */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #f5f5f5;
+    width: 250px;
+    height: 80%;
+    transition: 0.5s;
+}
+.active {
+    left: 0;
+}
+ul {
+    margin: 0;
+    padding: 20px 0;
+}
+ul li {
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+ul li:first-child {
+    
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+ul li:hover {
+    background: #d3d3d3
+}
+.activeItem {
+    background: #d3d3d3
+}
+ul li a {
+    padding: 10px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+ul li:hover a {
+    transform: scale(1.1);
+}
+.sidebarBtn {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 70px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+}
+.sidebarBtn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #262626;
+    position: absolute;
+    top: 34px;
+    transition: .3s;
+}
+.sidebarBtn span:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width:100%;
+    height: 3px;
+    background: #262626;
+    transition: .3s;
+}
+.sidebarBtn span:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width:100%;
+    height: 3px;
+    background: #262626;
+    transition: .3s;
+}
+
+/* content */
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: calc(100vw - 60px);
+    height: 100vh;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.contentActive {
+    left: 310px;
+    width: calc(100vw - 310px);
+}
+/* header logo */
+.logo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    z-index: 1000;
+}
+/* section */
+.content .project {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.project h3 {
+    text-align: center;
+}
+.project p {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+.project p.heading {
+    text-shadow: -2px 2px 5px rgb(97, 95, 95);
+    font-size: 18px;
+    color: blue;
+}
+
+.project .graph {
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.coursesForm {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.coursesForm .left {
+    flex: 1fr;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid black;
+    padding-right: 50px;
+    min-width: 400px;
+}
+.coursesForm .right {
+    flex: 1fr;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 400px;
+}
+
+.project .graph form {
+    margin: 0 auto;
+    width: 400px;
+}
+.project .graph form:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.project .graph form select {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    background: #d7d3d3;
+    font-size: 15px;
+}
+.project .graph form select:focus {
+    outline: none;
+}
+.project .graph form button {
+    font-size: 18px;
+    padding: 12px 15px;
+    margin: 10px 0;
+    float: right;
+    border-radius: 5px;
+    outline: none;
+}
+.project .graph form button:hover {
+    background: #454444;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+#chart, #chart_div, #regions_div, #chart2 {
+    margin-bottom: 60px;
+}
+
+/*  Generat Visulation - World Map properties */
+.subunit {
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 1px;
+}
+text.subunit-label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-anchor: middle;
+    fill: #000;
+}
+.subunit-label {
+    display: none;
+}
+.graticule {
+    fill: none;
+    stroke: #aaa;
+    stroke-opacity: .5;
+    stroke-width: .5px;
+}
+
+
+
+/*  Generat Visulation - World Map properties */
