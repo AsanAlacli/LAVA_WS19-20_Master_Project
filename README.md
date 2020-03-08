@@ -1,3 +1,4 @@
+![](static/image/Logo.jpg)
 # LAVA_WiSe19-20_Master_Project
 Task 4.4: Final Project Submission
 The submission should contain the following documents:
