@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: verdana;
+    font-family: 'Baloo Tamma 2', cursive;
     background: #fff;
     overflow: scroll;
 }
+
 
 /* sidebar menu */
 
@@ -17,37 +18,45 @@ body {
     height: 80%;
     transition: 0.5s;
 }
+
 .active {
     left: 0;
 }
+
 ul {
     margin: 0;
     padding: 20px 0;
 }
+
 ul li {
     list-style: none;
     padding: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 ul li:first-child {
-    
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 ul li:hover {
     background: #d3d3d3
 }
+
 .activeItem {
     background: #d3d3d3
 }
+
 ul li a {
     padding: 10px;
     color: #000;
     display: block;
     text-decoration: none;
 }
+
 ul li:hover a {
     transform: scale(1.1);
 }
+
 .sidebarBtn {
     position: absolute;
     top: 0;
@@ -60,6 +69,7 @@ ul li:hover a {
     border: none;
     outline: none;
 }
+
 .sidebarBtn span {
     display: block;
     width: 35px;
@@ -69,26 +79,29 @@ ul li:hover a {
     top: 34px;
     transition: .3s;
 }
+
 .sidebarBtn span:before {
     content: '';
     position: absolute;
     top: -10px;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 3px;
     background: #262626;
     transition: .3s;
 }
+
 .sidebarBtn span:after {
     content: '';
     position: absolute;
     top: 10px;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 3px;
     background: #262626;
     transition: .3s;
 }
+
 
 /* content */
 
@@ -101,11 +114,15 @@ ul li:hover a {
     transition: 0.5s;
     box-sizing: border-box;
 }
+
 .contentActive {
     left: 310px;
     width: calc(100vw - 310px);
 }
+
+
 /* header logo */
+
 .logo {
     position: fixed;
     top: 0;
@@ -116,7 +133,10 @@ ul li:hover a {
     margin-bottom: 10px;
     z-index: 1000;
 }
+
+
 /* section */
+
 .content .project {
     width: 100%;
     min-height: 100vh;
@@ -126,14 +146,17 @@ ul li:hover a {
     justify-content: flex-start;
     align-items: center;
 }
+
 .project h3 {
     text-align: center;
 }
+
 .project p {
     width: 90%;
     margin: 50px auto;
     text-align: center;
 }
+
 .project p.heading {
     text-shadow: -2px 2px 5px rgb(97, 95, 95);
     font-size: 18px;
@@ -144,6 +167,7 @@ ul li:hover a {
     margin: 0 auto;
     padding: 10px 20px;
 }
+
 .coursesForm {
     width: 100%;
     margin-top: 50px;
@@ -151,6 +175,7 @@ ul li:hover a {
     justify-content: center;
     align-items: flex-start;
 }
+
 .coursesForm .left {
     flex: 1fr;
     margin: 20px;
@@ -161,6 +186,7 @@ ul li:hover a {
     padding-right: 50px;
     min-width: 400px;
 }
+
 .coursesForm .right {
     flex: 1fr;
     margin: 20px;
@@ -174,11 +200,13 @@ ul li:hover a {
     margin: 0 auto;
     width: 400px;
 }
+
 .project .graph form:after {
     content: '';
     display: block;
     clear: both;
 }
+
 .project .graph form select {
     width: 100%;
     height: 40px;
@@ -187,9 +215,11 @@ ul li:hover a {
     background: #d7d3d3;
     font-size: 15px;
 }
+
 .project .graph form select:focus {
     outline: none;
 }
+
 .project .graph form button {
     font-size: 18px;
     padding: 12px 15px;
@@ -198,22 +228,29 @@ ul li:hover a {
     border-radius: 5px;
     outline: none;
 }
+
 .project .graph form button:hover {
     background: #454444;
     color: #f5f5f5;
     cursor: pointer;
 }
 
-#chart, #chart_div, #regions_div, #chart2 {
+#chart,
+#chart_div,
+#regions_div,
+#chart2 {
     margin-bottom: 60px;
 }
 
+
 /*  Generat Visulation - World Map properties */
+
 .subunit {
     fill: none;
     stroke: #FFF;
     stroke-width: 1px;
 }
+
 text.subunit-label {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -221,16 +258,17 @@ text.subunit-label {
     text-anchor: middle;
     fill: #000;
 }
+
 .subunit-label {
     display: none;
 }
+
 .graticule {
     fill: none;
     stroke: #aaa;
     stroke-opacity: .5;
     stroke-width: .5px;
 }
-
 
 
 /*  Generat Visulation - World Map properties */
