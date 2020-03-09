@@ -56,6 +56,12 @@ Because of our project have static website files, we used NodeJs. That is why, w
 * Start the server with **http-server**
 
 
+## Group Members
+
+* Tianyu Zhu
+* Muhammad Dawar
+* Hasan Halacli
+
 
 
 
