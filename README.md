@@ -61,10 +61,3 @@ Because of our project have static website files, we used NodeJs. That is why, w
 * Tianyu Zhu
 * Muhammad Dawar
 * Hasan Halacli
-
-
-
-
-**the project title, a short description, project architecture, libraries used, screenshots of the visualizations, detailed documentation on how to run and deploy your project, and group members**
-
-
