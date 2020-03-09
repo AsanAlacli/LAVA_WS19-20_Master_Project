@@ -12,7 +12,31 @@ Alike cultural integration, newly coming international students face various pro
 
 ![](Project_Architecture2.png)
 
+We set the **Node.js server and Express.js server*** and developed the modules which will be used for querying from the client side and responded from the server side. We used Express.js server to manage our routes in the better way possible, making the project open and easy for future development and plugging in with additional modules in future.
+For front-end development, we used **HTML at the structural level, CSS and Bootstrap** for designing and basic JavaScript to handle client-side events. The backend is entirely based on JavaScript and jQuery, both for processing, querying and responding. For visualizations, we have chosen Highcharts.js because it was easy to manage, fancy and the visualizations seems better than those made using D3.js or C3.js. Highcharts.js also provides plenty of default utilities which are easy and comfortable to use such as colours of bars, ledgers and text etc. 
+
+## Screenshots of the Visualizations
+
+![](screenshots0.png)
+
+![](screenshots1.png)
+
+![](screenshots2.png)
+
+![](screenshots3.png)
+
+![](screenshots4.png)
+
+![](screenshots5.png)
+
+![](screenshots6.png)
+
+![](screenshots7.png)
+
+![](screenshots8.png)
+
+![](screenshots9.png)
 
 **the project title, a short description, project architecture, libraries used, screenshots of the visualizations, detailed documentation on how to run and deploy your project, and group members**
 
-![](express/Hasan/Logo.png)
+
