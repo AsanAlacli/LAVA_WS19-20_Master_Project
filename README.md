@@ -17,6 +17,7 @@ For front-end development, we used **HTML at the structural level, CSS and Boots
 
 ## Screenshots of the Visualizations
 
+
 ![](screenshots0.png)
 
 ![](screenshots1.png)
@@ -36,6 +37,27 @@ For front-end development, we used **HTML at the structural level, CSS and Boots
 ![](screenshots8.png)
 
 ![](screenshots9.png)
+
+
+## How to Run and Deploy
+
+Because of our project have static website files, we used NodeJs. That is why, we need to run node(NodeJS) with http server. 
+
+**Steps**
+
+* Download and extract this repository.
+
+* Download and Install NodeJS under the "express" folder, download the latest stable release of NodeJS from https://nodejs.org and install using all the default options.
+
+* Install the http-server package from npm, Install the http-server globally on your machine using the node package manager (npm) command line tool **npm install -g http-server**
+
+* Change to the directory containing your static web files (file name :express) in the command line/terminal window
+
+* Start the server with **http-server**
+
+
+
+
 
 **the project title, a short description, project architecture, libraries used, screenshots of the visualizations, detailed documentation on how to run and deploy your project, and group members**
 
